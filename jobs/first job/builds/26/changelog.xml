@@ -1,0 +1,11 @@
+commit d16f3be1a905f9757255734801c4b38ddfac3989
+tree 9a952026c5882e8f7747560621a8cba3a38c46eb
+parent 05dcd41b60515be254990ec2d574c970d099efc5
+author AmulyaChaya <amulyahn2012@gmail.com> 2021-07-18 00:26:29 +0530
+committer GitHub <noreply@github.com> 2021-07-18 00:26:29 +0530
+
+    Update fact.c
+    
+    new1
+
+:100644 100644 f78845f8e67c846abfba5d9770ac533650835c1b 6b4d735928eb426f9334d1e549baf29d78946460 M	fact.c

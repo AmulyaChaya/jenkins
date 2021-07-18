@@ -1,0 +1,31 @@
+Started by user [8mha:////4BSNxmPajkLZyGQfU9o8d6NecOs/oiZeDugUztNdTxlZAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYe/dLi1CL9xNzSnMpEAE2G8f3BAAAA[0mAmulya.H.N
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/first job
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/first job/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/AmulyaChaya/c_test.git # timeout=10
+Fetching upstream changes from https://github.com/AmulyaChaya/c_test.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/AmulyaChaya/c_test.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/mathematics^{commit} # timeout=10
+Checking out Revision 36d03ed25d1fa9e4f39e3c4dd1db4bc96c066319 (refs/remotes/origin/mathematics)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 36d03ed25d1fa9e4f39e3c4dd1db4bc96c066319 # timeout=10
+Commit message: "testing"
+ > git rev-list --no-walk 02ca9ada9311a994439508c198b33f3ee84e6da4 # timeout=10
+[first job] $ /bin/sh -xe /tmp/jenkins6693939862435436112.sh
++ cd /var/lib/jenkins/workspace/test
++ make
+gcc -c big3.c
+big3.c:2:5: error: expected ‘;’ before ‘void’
+ test
+     ^
+     ;
+ void biggest3() {
+ ~~~~ 
+make: *** [makefile:6: big3.o] Error 1
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

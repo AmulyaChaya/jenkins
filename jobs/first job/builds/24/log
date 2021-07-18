@@ -1,0 +1,40 @@
+Started by user [8mha:////4BSNxmPajkLZyGQfU9o8d6NecOs/oiZeDugUztNdTxlZAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYe/dLi1CL9xNzSnMpEAE2G8f3BAAAA[0mAmulya.H.N
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/first job
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/first job/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/AmulyaChaya/c_test.git # timeout=10
+Fetching upstream changes from https://github.com/AmulyaChaya/c_test.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/AmulyaChaya/c_test.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/mathematics^{commit} # timeout=10
+Checking out Revision 756b71049e8c8335a8fd892b6490a079e5ec736c (refs/remotes/origin/mathematics)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 756b71049e8c8335a8fd892b6490a079e5ec736c # timeout=10
+Commit message: "make file is added"
+ > git rev-list --no-walk 756b71049e8c8335a8fd892b6490a079e5ec736c # timeout=10
+[first job] $ /bin/sh -xe /tmp/jenkins643559848009252626.sh
++ cd /var/lib/jenkins/workspace/test
++ make
+gcc -c main.c
+main.c:2:2: warning: return type defaults to ‘int’ [-Wimplicit-int]
+  main() {
+  ^~~~
+main.c: In function ‘main’:
+main.c:3:10: warning: implicit declaration of function ‘biggest3’ [-Wimplicit-function-declaration]
+          biggest3();
+          ^~~~~~~~
+main.c:4:10: warning: implicit declaration of function ‘factorial’ [-Wimplicit-function-declaration]
+          factorial();
+          ^~~~~~~~~
+main.c:5:10: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+          reverse();
+          ^~~~~~~
+gcc -c big3.c
+gcc -c fact.c
+gcc -c reverse.c
+gcc -o ABC.exe main.o big3.o fact.o reverse.o
+Finished: SUCCESS

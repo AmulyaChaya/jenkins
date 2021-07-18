@@ -1,0 +1,12 @@
+Started on Jul 17, 2021 7:10:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 6d1bd508ed0806619ac7803cad74183f518d6144 (refs/remotes/origin/mathematics)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git ls-remote -h -- https://github.com/AmulyaChaya/c_test.git # timeout=10
+Found 2 remote heads on https://github.com/AmulyaChaya/c_test.git
+[poll] Latest remote head revision on refs/heads/mathematics is: 02ca9ada9311a994439508c198b33f3ee84e6da4
+Done. Took 0.16 sec
+Changes found

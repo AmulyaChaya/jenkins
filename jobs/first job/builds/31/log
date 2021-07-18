@@ -1,0 +1,26 @@
+Started by user [8mha:////4BSNxmPajkLZyGQfU9o8d6NecOs/oiZeDugUztNdTxlZAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYe/dLi1CL9xNzSnMpEAE2G8f3BAAAA[0mAmulya.H.N
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/first job
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/AmulyaChaya/c_test.git
+ > git init /var/lib/jenkins/workspace/first job # timeout=10
+Fetching upstream changes from https://github.com/AmulyaChaya/c_test.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/AmulyaChaya/c_test.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/AmulyaChaya/c_test.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/mathematics^{commit} # timeout=10
+Checking out Revision 36d03ed25d1fa9e4f39e3c4dd1db4bc96c066319 (refs/remotes/origin/mathematics)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 36d03ed25d1fa9e4f39e3c4dd1db4bc96c066319 # timeout=10
+Commit message: "testing"
+ > git rev-list --no-walk 36d03ed25d1fa9e4f39e3c4dd1db4bc96c066319 # timeout=10
+[first job] $ /bin/sh -xe /tmp/jenkins274857322436163827.sh
++ cd /var/lib/jenkins/workspace/test
+/tmp/jenkins274857322436163827.sh: line 2: cd: /var/lib/jenkins/workspace/test: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

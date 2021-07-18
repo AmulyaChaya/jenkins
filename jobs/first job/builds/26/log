@@ -1,0 +1,23 @@
+Started by an SCM change
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/first job
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/first job/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/AmulyaChaya/c_test.git # timeout=10
+Fetching upstream changes from https://github.com/AmulyaChaya/c_test.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/AmulyaChaya/c_test.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/mathematics^{commit} # timeout=10
+Checking out Revision d16f3be1a905f9757255734801c4b38ddfac3989 (refs/remotes/origin/mathematics)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d16f3be1a905f9757255734801c4b38ddfac3989 # timeout=10
+Commit message: "Update fact.c"
+ > git rev-list --no-walk 05dcd41b60515be254990ec2d574c970d099efc5 # timeout=10
+[first job] $ /bin/sh -xe /tmp/jenkins1493896404473052675.sh
++ cd /var/lib/jenkins/workspace/test
++ make
+make: 'ABC.exe' is up to date.
+Finished: SUCCESS
